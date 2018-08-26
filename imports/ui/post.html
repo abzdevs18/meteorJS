@@ -1,0 +1,15 @@
+<template name="post">
+  <div class="w3-container w3-content w3-row-padding" style="width: 80%; margin-top: 70px;">
+    <div class="w3-card-4 w3-round-small">
+      <div class="w3-container w3-teal">
+        <h2>Post Movies</h2>
+      </div>
+      <form class="w3-container w3-margin" style="width: auto;">
+        <p><input class="w3-input w3-border" name="movieTitle" type="text" placeholder="Title" required></p>
+        <p><input class="w3-input w3-border" name="description" type="text" placeholder="Description" required></p>
+        <p><button class="w3-btn w3-teal w3-round-large">Add Movie</button></p>
+      </form>
+    </div>
+  </div>
+  {{> movie}}
+</template>

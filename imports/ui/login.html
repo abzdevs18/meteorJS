@@ -1,0 +1,25 @@
+<template name="login">
+  <div class="main">
+  <div class="formCon">
+    <img src="img/signLogo.png">
+    <!-- form for login -->
+    <form class="go-bottom" id="f">
+      <div>    
+        <input id="user" name="loginUsername" type="text" required>    
+        <label for="user">Name/Email</label>  
+      </div>  
+      <div>    
+        <input id="password" name="loginPassword" type="password" required><label for="password">Password</label>
+      </div>
+      <div>
+        <button id="subBtn" type="Submit" name="Submit">Login</button>
+      </div> 
+    </form>
+    <!-- end for login -->
+    <div class="signUp">
+      <span>or</span>
+      <a href="/signUp"><button id="subBtn" style="cursor: pointer;outline: none;">Sign Up</button></a>
+    </div> 
+  </div>
+  </div>
+</template>

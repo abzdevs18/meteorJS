@@ -1,0 +1,12 @@
+<body>
+
+</body>
+
+<template name="home">
+  {{#if currentUser}}
+      {{> navigation}}
+      {{> post}}    
+  {{else}}
+    {{> login}}
+  {{/if}} 
+</template>

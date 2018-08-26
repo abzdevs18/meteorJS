@@ -1,0 +1,123 @@
+
+.main {
+	position: fixed;
+	padding-top: 150px; /*position of the login form */
+	left: 0;
+	right: 0;
+}
+.formCon {
+	position: relative;
+	margin: auto;
+	width: 400px;
+	-webkit-animation-name: animate;
+	-webkit-animation-duration: 0.7s;
+	animation-name: animate;
+	animation-duration: 0.7s;
+}
+.signUp{
+	border-top: 1px solid gray;
+	position: relative;
+    margin: 40px 0 20px;
+    text-align: center;
+}
+span{
+	position: relative;
+	background-color: #fff;
+    padding: 0 .5em;
+    position: relative;
+    color: #6c7378;
+    top: -.7em;
+}
+.formCon > img {
+	width: 150px;
+	margin: 0 auto;
+	position: absolute;
+	left: 0;right: 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+#f {
+	padding-top: 80px;
+}
+@keyframes animate{
+	from{
+		top: -300px;
+		opacity: 0;
+	}
+	to{
+		top: 0;
+		opacity: 1;
+	}
+}
+form {
+  	width: 400px; 
+}
+form > div {
+	position: relative;
+  	overflow: hidden;
+  	margin-top: 15px;
+  	border-radius: 5px;
+  	z-index: 1;
+}
+form input, form select{
+  	border-radius: 5px;
+  	width: 100%;
+  	border: 1px solid gray;
+  	background: none;
+  	position: relative;
+  	top: 0;
+  	left: 0;
+  	z-index: 1;
+  	padding: 8px 12px;
+  	outline: 0;
+}
+select:valid{
+	background-color:#ffffff !important;}
+#position{
+  	background-color: transparent;
+}
+form input:valid {
+  	background: #f7f7f700;
+}
+form input:focus + label, form select:focus + label {
+  	color: var(--darkFont);
+  	font-size: 70%;
+  	padding: 1px 6px;
+  	z-index: 2;
+  	text-transform: uppercase;
+}
+form label {
+  	transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+  	position: absolute;
+  	color: #999;
+  	padding: 7px 6px;
+}
+.go-bottom {
+  	right: 4.05em;
+}
+form.go-bottom input, form.go-bottom select {
+  	padding: 12px 12px 12px 12px;
+}
+form.go-bottom label {
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	width: 100%;
+}
+form.go-bottom input:focus, form.go-bottom select:focus {
+  	padding: 4px 6px 20px 6px;
+}
+form.go-bottom input:focus + label, form.go-bottom select:focus + label {
+  	top: 100%;
+  	margin-top: -16px;
+}
+#subBtn {
+  	width: 100%;
+  	height: 40px;
+  	border: 2px solid #212931;
+  	background-color: #212931;
+  	color: #f3f3f3;
+  	border-radius: 3px;
+  	font-size: 18px;
+  	cursor: pointer;
+}

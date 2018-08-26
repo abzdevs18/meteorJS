@@ -1,0 +1,30 @@
+<template name="userProfile">
+  {{> navigation}}
+  <div class="w3-content w3-card-4" style="width: 60%;margin-top: 70px;">
+    <div class="w3-container w3-center w3-margin-top">
+      <div class="w3-padding-16">
+        <center>
+        <!-- this will try to check if the user upload his/her image. if not the else will execute -->
+        {{#with UserImages}}
+          <img src="{{image}}" class="profile-img w3-circle w3-border w3-border-teal" style="width: 200px;height: 200px">
+        {{else}}
+          <img src="img/face.jpg" style="width: 200px;height: 200px" class="w3-circle w3-border w3-border-teal">
+
+          <form class="edit-profile" enctype="multipart/form-data">
+ <!--            <label for="profileImage">Choose Profile Image</label>
+            <span id="filename"></span> -->
+            <input type="file" name="profileImage" id="profileImage" class="black profileImage" style="width: 70%;padding: 2px 2px;">
+            <br>
+            <button type="submit" value="Upload Photo" id="profile-btn" class="btn btn-sml btn-primary">Upload Photo</button>
+          </form>
+        {{/with}}
+        </center>
+        <!-- end of with -->
+      </div>
+        <h2>{{username}}</h2>
+      <div class="w3-panel w3-border w3-round-xxlarge w3-border-teal w3-teal">
+        <h3>Administration</h3>
+      </div>
+    </div>
+  </div>
+</template>
